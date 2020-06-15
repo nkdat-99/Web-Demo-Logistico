@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    padding: 20px 0px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav .container,
+header .container {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    margin: auto;
+}
+
+header .container .logo {
+    flex: 2;
+}
+
+header .container .contact {
+    flex: 1.2;
+}
+
+header .container .contact .list {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container .contact .list-infor a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #919191;
+    transition: 0.3s;
+}
+
+header .container .contact .list-infor i {
+    margin-right: 7px;
+    color: #FF3414;
+}
+
+header .container .contact .list-contact a {
+    font-size: 1.1rem;
+    border: 1px solid #FF3414;
+    color: #FF3414;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+nav .container .menu ul li a:hover,
+header .container .contact .list-infor a:hover {
+    color: #FF3414;
+}
+
+header .container .contact .list-contact a:hover {
+    background-color: #FF3414;
+    color: #FFF;
+}
+
+nav {
+    padding: 10px 0px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+nav .container .menu {
+    flex: 3;
+}
+
+nav .container .search {
+    flex: 1;
+}
+
+nav .container .menu ul li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+nav .container .menu ul li a {
+    text-decoration: none;
+    color: #242424;
+}
+
+nav .container .menu ul li a i {
+    margin-left: 5px;
+}
+
+nav .container .search {
+    position: relative;
+    margin-right: 15px;
+}
+
+nav .container .search input {
+    background-color: #ff4a2e;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+nav .container .search input::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+nav .container .search input:focus {
+    outline: none;
+}
+
+nav .container .search a {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    color: rgb(255, 255, 255);
+}
+
+section {
+    height: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+section:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #001D38;
+    position: absolute;
+    opacity: 50%;
+}
+
+section .slide {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/banner/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+section .slide .slide-text {
+    max-width: 750px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+section .slide p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #FFF;
+}
+
+section .slide h3 {
+    font-size: 3.7rem;
+    font-weight: 800;
+    color: #FFF;
+    line-height: 70px;
+    margin: 20px 0 50px 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+section .slide a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #FF3414;
+    border: 1px solid #FF3414;
+    text-decoration: none;
+    padding: 18px 42px;
+}
+
+section .slide a:hover {
+    background: none;
+    color: #FF3414;
+    border: 1px solid #FF3414;
+    transition: 0.3s;
+}
