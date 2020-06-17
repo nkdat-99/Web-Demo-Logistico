@@ -149,13 +149,12 @@ nav .container .search a {
     color: rgb(255, 255, 255);
 }
 
-section {
-    height: 700px;
+#slide {
     position: relative;
     z-index: 1;
 }
 
-section:before {
+#slide:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -164,7 +163,7 @@ section:before {
     opacity: 50%;
 }
 
-section .slide {
+#slide .slide-img {
     width: 100%;
     height: 700px;
     background-image: url(img/banner/banner.png);
@@ -176,20 +175,20 @@ section .slide {
     align-items: center;
 }
 
-section .slide .slide-text {
+#slide .slide-img .slide-text {
     max-width: 750px;
     position: absolute;
     z-index: 2;
     text-align: center;
 }
 
-section .slide p {
+#slide .slide-img p {
     font-size: 1.3rem;
     font-weight: 400;
     color: #FFF;
 }
 
-section .slide h3 {
+#slide .slide-img h3 {
     font-size: 3.7rem;
     font-weight: 800;
     color: #FFF;
@@ -199,7 +198,7 @@ section .slide h3 {
     letter-spacing: 1px;
 }
 
-section .slide a {
+#slide .slide-img a {
     font-size: 1rem;
     font-weight: 400;
     color: #FFF;
@@ -209,9 +208,77 @@ section .slide a {
     padding: 18px 42px;
 }
 
-section .slide a:hover {
+#slide .slide-img a:hover {
     background: none;
     color: #FF3414;
     border: 1px solid #FF3414;
     transition: 0.3s;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 120px 15px 90px 15px;
+}
+
+#about .container .single {
+    max-width: 300px;
+}
+
+#about .container .single h3 {
+    margin: 15px 0;
+    letter-spacing: 0.1rem;
+}
+
+#about .container .single p {
+    line-height: 30px;
+    color: #919191;
+    letter-spacing: 0.01rem;
+}
+
+#about .container .single:hover h3 {
+    margin: 15px 0;
+    color: #FF3414;
+    transition: 0.5s;
+}
+
+#services {
+    background-color: #F5FBFF;
+}
+
+#services .container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 120px 15px 90px 15px;
+}
+
+#services .container .single-text {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #001D38;
+}
+
+#services .container .single-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#services .container .single {
+    max-width: 300px;
+}
+
+#services .container .single h3 {
+    margin: 15px 0;
+    letter-spacing: 0.1rem;
+}
+
+#services .container .single p {
+    line-height: 30px;
+    color: #919191;
+    letter-spacing: 0.01rem;
 }
